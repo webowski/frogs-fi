@@ -1,0 +1,52 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+html {
+	text-size-adjust: 100%;
+	text-rendering: optimizelegibility;
+	-webkit-font-smoothing: subpixel-antialiased;
+	cursor: default;
+}
+
+body {
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+svg {
+	display: inline-block;
+}
+
+picture,
+picture img {
+	display: block;
+}
+
+input,
+textarea,
+button {
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+	color: inherit;
+}
+
+button {
+	touch-action: manipulation;
+	cursor: pointer;
+}
+
+:focus {
+	outline: none;
+}
+
+:focus-visible {
+	border-radius: var(--radius-xs);
+	outline: 4px solid rgba(50,151,211,.3);
+}

@@ -1,0 +1,148 @@
+html {
+	font-size: $rem;
+}
+
+body {
+	color: var(--major);
+	font-family: var(--fontMain);
+	font-size: var(--fontSize);
+	line-height: var(--lineHeight);
+}
+
+a {
+	color: var(--primary);
+	text-decoration: underline;
+	text-underline-position: under;
+	transition:
+		color var(--duration-sm),
+		border-color var(--duration-sm),
+		background-color var(--duration-sm),
+		opacity var(--duration-sm),
+		box-shadow var(--duration-sm);
+}
+
+a:is(:hover) {
+	text-decoration: none;
+}
+
+p {
+	max-width: 72ch;
+	@include flowMargin;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+
+	@include mediaUp(md) {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	margin-top: 50px;
+	margin-bottom: 30px;
+	@include flowMargin;
+	color: var(--intense);
+	line-height: 1.2;
+	font-weight: 500;
+	font-family: $fontExtra;
+	text-align: center;
+
+	@include mediaUp(md) {
+		margin-top: 60px;
+		margin-bottom: 40px;
+	}
+}
+
+h1, .h1 {
+	font-size: 40px;
+	font-weight: 500;
+	letter-spacing: -0.02em;
+
+	@include mediaUp(sm) {
+		font-size: 48px;
+	}
+
+	@include mediaUp(md) {
+		font-size: 64px;
+	}
+}
+
+h2, .h2 {
+	margin-top: 0px;
+	margin-bottom: 16px;
+	font-family: Archivo, sans-serif;
+	font-size: 48px;
+	line-height: 1.2;
+	font-weight: 500;
+	letter-spacing: -0.02em;
+
+	@include mediaUp(md) {
+		font-size: 2.125rem;
+	}
+}
+
+h3, .h3 {
+	font-size: 1.75rem;
+
+	@include mediaUp(md) {
+		margin-top: 1.5rem;
+		margin-bottom: 1.25rem;
+		font-size: 1.75rem;
+	}
+}
+
+h4, .h4 {
+	font-size: 1.5rem;
+}
+
+h5, .h5 {
+	font-size: 1rem;
+}
+
+ul {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	padding-left: 0;
+	@include flowMargin;
+	list-style-type: none;
+}
+
+ul > li {
+	max-width: 778px;
+	position: relative;
+	margin-top: .5rem;
+	margin-left: 0;
+	padding-left: 1rem;
+
+	@include mediaUp(md) {
+		padding-left: 1.175rem;
+	}
+}
+
+ul > li:before {
+	@include pseudoBlock(6px, 6px);
+	top: .60em;
+	left: 2px;
+	background-color: currentColor;
+	border-radius: 8px;
+}
+
+ul > li:first-child {
+	margin-top: 0;
+}
+
+ul > li > ul:first-child {
+	margin-top: 5px;
+}
+
+.highlight {
+	padding-left: .18em;
+	padding-right: .18em;
+	background-color: var(--major);
+	color: var(--inverse);
+}
+
+.text-center {
+	text-align: center;
+}

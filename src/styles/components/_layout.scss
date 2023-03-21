@@ -1,0 +1,19 @@
+body {
+	background-color: var(--bg);
+}
+
+.wrap {
+	min-height: 100vh;
+	overflow-x: hidden;
+	position: relative;
+}
+
+.container {
+	@include container;
+}
+
+.container--xs {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 640px;
+}

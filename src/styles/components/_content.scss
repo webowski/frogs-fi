@@ -1,0 +1,61 @@
+.services {
+	display: flex;
+	gap: 24px;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 1.5rem;
+
+	@include mediaUp(md) {
+		gap: 32px;
+		flex-direction: row;
+		font-size: 2rem;
+	}
+
+	@include mediaUp(lg) {
+		gap: 40px;
+		flex-direction: row;
+		font-size: 2.5rem;
+	}
+}
+
+.feature-set {
+	@include flowMargin;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 40px;
+
+	@include mediaUp(lg) {
+		align-items: flex-start;
+		flex-direction: row;
+	}
+}
+
+.feature {
+	max-width: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 24px;
+	text-align: center;
+}
+
+.feature__icon {
+	display: block;
+	width: 56px;
+	height: 56px;
+	background-color: rgba(0,0,0,.2);
+	border-radius: 50%;
+}
+
+.join-list {
+	@include flowMargin;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	font-size: 24px;
+}

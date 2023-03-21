@@ -1,0 +1,35 @@
+:root {
+	// Text
+	--fontMain:             #{$fontMain};
+	--fontSize:             1rem;
+	--lineHeight:           1.57;
+
+	// Color
+		--brand:                #{$blue};
+	--primary:              #{$blue};
+		--success:              #{$green};
+		--accent:               #{$yellow};
+		--danger:               #{$red};
+	--intense:              #{$black};
+	--major:                #{$gray-700};
+		--minor:                #{$gray-500};
+		--muted:                #{$gray-400};
+		--light:                #{$gray-300};
+		--lighter:              #{$gray-200};
+		--lightest:             #{$gray-100};
+		--disabled:             #{$gray-300};
+	--inverse:              #{$white};
+	--bg:                   #{$greenLight};
+	--border:               rgba(5, 5, 5, 0.15);
+
+	// Dimensions
+	--containerMax:         1140px;
+	--sidePadding:          5%;
+
+	// Animation
+	--duration-sm:          .12s;
+	--duration-md:          .2s;
+	--duration-lg:          .3s;
+	--duration-xl:          .6s;
+	--duration-xxl:         1s;
+}

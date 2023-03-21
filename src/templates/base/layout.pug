@@ -1,0 +1,32 @@
+include mixins.pug
+block variables
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>FrogsFi 🐸</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#92cc41" />
+	link(rel="shortcut icon" type="image/png" href=require("~/images/favicon-32x32.png"))
+	link(rel="shortcut icon" sizes="196x196" href=require("~/images/android-chrome-512x512.png"))
+	link(rel="apple-touch-icon" href=require("~/images/apple-touch-icon.png"))
+	include ../partials/head-includes.pug
+	block head-includes
+</head>
+<body>
+
+	<div class="wrap">
+		include ../partials/header.pug
+
+		<main class="main">
+			block main
+		</main>
+
+		include ../partials/footer.pug
+	</div>
+
+	include ../partials/footer-includes.pug
+	block footer-includes
+</body>
+</html>

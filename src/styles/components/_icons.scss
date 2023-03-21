@@ -1,0 +1,21 @@
+.icon {
+	width: 24px;
+	height: 24px;
+	fill: currentColor;
+}
+
+.circle {
+	--size: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: var(--size);
+	height: var(--size);
+	border-radius: var(--size);
+	border: 1px solid var(--intense);
+}
+
+a.circle.circle {
+	color: var(--intense);
+	border-color: var(--intense);
+}
